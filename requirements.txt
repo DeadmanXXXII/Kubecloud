@@ -8,3 +8,6 @@ kubectl
 
 # Zenity for graphical file selection dialogs
 zenity
+
+# minIO for the minIO deployment
+minio
