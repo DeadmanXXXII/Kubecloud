@@ -1,4 +1,4 @@
-Step-by-Step Guide:
+# Step-by-Step Guide:
 
 Preparation and Prerequisites:
 
