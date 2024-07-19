@@ -11,3 +11,6 @@ zenity
 
 # minIO for the minIO deployment
 minio
+
+# Go
+go
