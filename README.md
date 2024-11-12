@@ -41,9 +41,49 @@ Description: If communications with AWS services are not properly secured, the a
 
 ---
 
-CVSS Score Breakdown
+CVSS Score Breakdown for Combination Attack on AWS Infrastructure:
 
-This attack scenario is rated based on its potential for system-wide impact:
+Base Score: 9.1 (Critical)
+
+Attack Vector:
+
+Network: Exploitable over the network. The attack leverages stolen AWS keys that can be used remotely to control AWS infrastructure.
+
+
+Attack Complexity:
+
+Low: The attack is straightforward once the keys are compromised. It does not require special conditions or advanced techniques.
+
+
+Privileges Required:
+
+Low: Minimal privileges are needed initially, as the attacker only requires stolen AWS keys to begin exploiting the system.
+
+
+User Interaction:
+
+None: The attack does not depend on any legitimate user’s actions, allowing the attacker to act autonomously.
+
+
+Scope:
+
+Changed: The attack impacts multiple AWS components and services. A successful breach of one system extends to other parts of the AWS environment.
+
+
+Confidentiality Impact:
+
+High: Compromised credentials allow access to sensitive data within AWS, putting data confidentiality at serious risk.
+
+
+Integrity Impact:
+
+High: The attacker can modify, deploy, or destroy resources, affecting the integrity of the AWS environment.
+
+
+Availability Impact:
+
+High: Unauthorized infrastructure provisioning can lead to resource exhaustion, potential service disruptions, and a loss of availability for legitimate users.
+
 
 Final CVSS Score: 9.1 (Critical)
 
@@ -67,7 +107,7 @@ Install the package in a test environment, and observe the exfiltration of AWS c
 
 2. Steal AWS Keys
 
-Confirm that the h0nda package exfiltrates AWS credentials by monitoring network traffic and identifying unauthorized external connections.
+Confirm that the fabrice package exfiltrates AWS credentials by monitoring network traffic and identifying unauthorized external connections.
 
 
 
