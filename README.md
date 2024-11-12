@@ -125,10 +125,6 @@ Verify that AWS resources, such as EC2 instances, are created.
 
 Check that MinIO is deployed and accessible, potentially exposing stored data.
 
-
-
-
-
 ---
 
 Impact
@@ -142,8 +138,6 @@ Deploy Applications (MinIO): Unauthorized deployments can result in unauthorized
 Alter or Destroy Infrastructure: Malicious scripts could terminate or modify resources, impacting the availability and integrity of the AWS environment.
 
 Data Exfiltration: MinIO or other deployed services could be used to store and exfiltrate sensitive data, impacting confidentiality.
-
-
 
 ---
 
@@ -177,10 +171,6 @@ Use tools like AWS Inspector for vulnerability assessments and dependency analys
 
 Restrict permissions for AWS resources to only those necessary for functionality, minimizing impact if credentials are compromised.
 
-
-
-
-
 ---
 
 Additional Recommendations
@@ -190,6 +180,8 @@ Use AWS Secrets Manager for secure storage of credentials.
 Regularly audit infrastructure-as-code scripts to remove any hard-coded credentials.
 
 Apply restrictive network policies for resources deployed by infrastructure automation to limit unauthorized access.
+
+---
 
 
 
