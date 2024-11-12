@@ -181,6 +181,9 @@ Regularly audit infrastructure-as-code scripts to remove any hard-coded credenti
 
 Apply restrictive network policies for resources deployed by infrastructure automation to limit unauthorized access.
 
+
+![Attck PoC in terminal.](https://raw.githubusercontent.com/DeadmanXXXII/Kubecloud/main/Screenshot_20240625-204258.png)
+
 ---
 
 
